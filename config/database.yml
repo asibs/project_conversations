@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: project_conversation_3_production
-  username: project_conversation_3
-  password: <%= ENV["PROJECT_CONVERSATION_3_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
